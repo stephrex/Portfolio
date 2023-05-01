@@ -1,0 +1,75 @@
+.image {
+	text-align: center;
+}
+/*.mainBody{
+	position: relative;
+	background: url(laptop.jpg);
+	background-size: cover;
+	width: 100%;
+	height:609px;
+}*/
+
+.mainBody::after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.9);
+	height: 609px;
+}
+
+.name {
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	color: black;
+}
+
+.status::before {
+	content: "Full Stack Web Developer";
+	animation: animate infinite 10s;
+	padding-left: 10px;
+}
+
+@keyframes animate {
+	0% {
+		content: "Full Stack Web Developer";
+	}
+	50% {
+		content: "Data Scientist";
+	}
+	75% {
+		content: "3d Modeller";
+	}
+}
+.status {
+	display: flex;
+	justify-content: center;
+	font-family: Georgia;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	background: -webkit-linear-gradient(rgb(0,0,0), rgb(255, 0, 136));
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.explore {
+	text-align: center;
+	height: 45px;
+	width: 29%;
+	padding: 1px;
+	background-color: rgba(0,20,50, 0.9);;
+/*	background:  rgba(210, 200, 150, 0.9);*/
+    color: white ;
+    transition: all 1s;
+    border: blue;
+    border-radius: 14px;
+}
+
+.explore:hover {
+	cursor: pointer;
+	transform: scale(1.1) ;
+}
